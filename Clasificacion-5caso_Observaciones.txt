@@ -1,0 +1,40 @@
+Clase 3 - Meybeline Corvera
+ 
+ 
+CLASIFICACION DE 5 SITUACIONES
+ 
+Regla que usamos: si el resultado es igual para todos sin importar quien
+pregunta, es estatico. Si depende de la persona, la hora o algun dato
+guardado, es dinamico.
+ 
+1. Descargar el logo de una empresa -> ESTATICO
+   El logo es un archivo de imagen fijo, siempre es el mismo sin importar quien 
+   lo descargue.
+ 
+2. Ver el saldo de tu cuenta bancaria en linea -> DINAMICO
+   Cada persona tiene un saldo distinto, se busca en una base de datos en el 
+   momento.
+ 
+3. Abrir un PDF de un syllabus -> ESTATICO
+   El PDF esta guardado tal cual y todos ven lo mismo.
+ 
+4. Ver tu feed personalizado de redes sociales -> DINAMICO
+   Cambia segun a quien sigue cada usuario, la hora y el algoritmo de la app.
+ 
+5. Cargar el icono de favoritos (favicon) de un sitio -> ESTATICO
+   Es una imagen fija que se entrega igual para cualquiera.
+ 
+ 
+
+PARTE 2: OBSERVACIONES AL RECARGAR
+
+Servidor estatico (puerto 3005): al recargar varias veces siempre sale
+exactamente lo mismo, porque solo lee el archivo saludo.html del disco
+y lo entrega tal cual.
+ 
+Contenedor dinamico (puerto 3006): al recargar cambia si cambio el nombre
+en la URL o si cambia la hora (manana, tarde, noche), porque el saludo se
+calcula cada vez que se pide, no viene de un archivo fijo.
+ 
+Diferencia principal: el estatico siempre entrega lo mismo , el dinamico calcula la respuesta 
+en el momento segun hora o datos del usuario
